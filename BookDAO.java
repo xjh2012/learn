@@ -37,7 +37,7 @@ public class BookDAO{
 		        System.out.println("空指针异常!数据库驱动类没找到!");
 		    }catch(SQLException se){
 			    se.printStackTrace();
-			    System.out.println("数据库连接失败!");
+			    System.out.println("fail");
 		    }finally{
 		    	try{
 		    		rs.close();
