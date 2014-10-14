@@ -42,9 +42,9 @@ public class BookAction extends ActionSupport {
 		BookDAO bd=new BookDAO();
 	    v=bd.delete(name);
 	    
-	    for(int i=0;i<v.size();i++){
-	    	 System.out.println(v.elementAt(i));
-	    }
+	    //for(int i=0;i<v.size();i++){
+	    	// System.out.println(v.elementAt(i));
+	    //}
 	    HttpServletRequest request=ServletActionContext.getRequest();
 	    request.setAttribute("allbooks", v);
 		return SUCCESS;

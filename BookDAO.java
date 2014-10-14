@@ -1,4 +1,4 @@
-package com.xjh;
+﻿package com.xjh;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -34,7 +34,7 @@ public class BookDAO{
 		    	}
 		    }catch(ClassNotFoundException e){
 		    	e.printStackTrace();
-		        System.out.println("空指针异常!数据库驱动类没找到!");
+		        System.out.println("数据库驱动类没找到!");
 		    }catch(SQLException se){
 			    se.printStackTrace();
 			    System.out.println("fail");
