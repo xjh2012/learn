@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.struts2.ServletActionContext;
 public class BookAction extends ActionSupport {
 	 
-	 private String name;
-         //static{System.out.println("haha");}
+	 
 	 private Vector<String> v=new Vector<String>();
 	 private Vector<String> ve=new Vector<String>();
 	public String getName()

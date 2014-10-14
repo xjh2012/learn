@@ -6,7 +6,7 @@ public class Book {
 	String AuthorID;
 	String Publisher;
 	String PublishDate;
-	String Price;
+	
 	String Name;
 	String Age;
 	
@@ -42,12 +42,7 @@ public class Book {
 	public void setPublishDate(String publishDate){
 		PublishDate=publishDate;
 	}
-	public String getPrice(){
-		return Price;
-	}
-	public void setPrice(String price){
-		Price=price;
-	}
+	
 	public String getName(){
 		return Name;
 	}

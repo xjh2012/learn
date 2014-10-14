@@ -30,6 +30,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</s:iterator>
       </tr>
       </p>
+<p align="center">
+    <tr>
+		   <s:iterator value="#request.information">
+			<br><s:property/></br>
+			</s:iterator>
+      </tr>
+      </p>
       <br> <a href="index.jsp">back</a> </br>
   </body>
 </html>

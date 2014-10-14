@@ -1,4 +1,4 @@
-package com.xjh;
+﻿package com.xjh;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,14 +13,7 @@ public class BookDAO{
 	public Vector<String> xjhBook(String name){
 	    Vector<String> v=new Vector<String>();
 		String drv="com.mysql.jdbc.Driver";
-		    Connection con=null;
-		    String url="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_xujiahuan";
-		    String username="xnj01m5mon";
-		    String password="4zh1xkhkh5xhjh5x5mi4whhzz4lhi2zmw2zz1i43";
-		    Statement stmt=null;
-		    ResultSet rs=null;
-		    ResultSet rst=null;
-		    String sql="select*from author";
+		    
 		    try{
 		    	Class.forName(drv);
 		    	con=DriverManager.getConnection(url,username,password);
