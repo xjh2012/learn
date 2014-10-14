@@ -8,7 +8,7 @@ public class Book {
 	String PublishDate;
 	String Price;
 	String Name;
-	String Age;
+	
 	
 	public String getISBN(){
 		return ISBN;
@@ -54,11 +54,6 @@ public class Book {
 	public void setName(String name){
 		Name=name;
 	}
-	public String getAge(){
-		return Age;
-	}
-	public void setAge(String age){
-		Age=age;
-	}
+	
 	
 }
