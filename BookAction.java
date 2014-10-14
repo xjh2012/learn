@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.struts2.ServletActionContext;
 public class BookAction extends ActionSupport {
-	 
+	
+		//static{System.out.println("haha");}
 	 
 	 private Vector<String> v=new Vector<String>();
 	 private Vector<String> ve=new Vector<String>();
@@ -41,9 +42,15 @@ public class BookAction extends ActionSupport {
 		BookDAO bd=new BookDAO();
 	    v=bd.delete(name);
 	    
+<<<<<<< HEAD
 	    for(int i=0;i<v.size();i++){
 	    	 //System.out.println(v.elementAt(i));
 	    }
+=======
+	    //for(int i=0;i<v.size();i++){
+	    	// System.out.println(v.elementAt(i));
+	    //}
+>>>>>>> C4
 	    HttpServletRequest request=ServletActionContext.getRequest();
 	    request.setAttribute("allbooks", v);
 		return SUCCESS;
